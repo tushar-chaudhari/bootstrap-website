@@ -77,18 +77,21 @@ body {
 .section-2 .heading-1 {
     margin-top: 10%;
     width: 80%;
+    padding-left: 10px;
    font-family: 'Righteous';
 }
 .section-2 .para{
     width: 80%;
     font-family: 'Ubuntu';
     color:whitesmoke;
+    margin-left: 10px;
     margin-bottom: 5%;
 }
 .section-2 .btn {
     width: 30%;
     margin-bottom: 15%;
-    padding: 2% 5%;
+    padding-left: 10px;
+    margin-left: 10px;
 }
 /* section 3 */
 .section-3{
@@ -104,14 +107,17 @@ body {
 .section-4{
     margin-top: 5%;
 }
-.section-4 img {
-    margin-top:15%;
+.section-4 .container .row .col-md-7 img {
+    margin-top:7%;
     margin-left:5%;
-    margin-bottom:10%;
+    margin-bottom:5%;
+     width:90%;
+     height:80%;
+     background-size: cover;
 }
 .section-4 h1 {
-    margin-top: 25%;
-    font-size: 4em;
+    margin-top: 20%;
+    font-size: 3em;
     font-family: 'Comfortaa';
 }
 .section-4 h3 {
@@ -148,20 +154,27 @@ footer h5{
 
 /* making responsive */
 /* tablet */
-@media screen and (max-width: 768px){
-    .section-4 .col-md-7 img {
-        width: 350px;
-    }
-    .section-4 .col-md-5 h1 {
-        font-size: 2em;
-    }
+
+@media screen (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 }
-@media screen and (max-width: 320px){
-    .site-content .site-title {
-        font-size: 30px;
+
+@media  (min-width: 320px) and (max-width: 480px) {
+  
+   .site-content .site-title {
         text-align: center;
+        margin-left:30px;
     }
-    .site-content{
-        width: 320px;
+    .site-btn-1{
+        margin-left: 12%;
     }
+    
+    .section-2{
+        padding-left: 10px;
+    }
+    footer h5{
+    font-size: 15px;
+    }
+  
 }
+
+/* media queries from githubu */
